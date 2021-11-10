@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".ProfilBalaiActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/Paragraph.Title"
+            android:text="Tugas &amp; Fungsi"
+            />
+        <TextView
+            style="@style/Paragraph"
+            android:text="BPTD Tipe A, mempunyai tugas melaksanakan pengelolaan lalu lintas dan angkutan jalan, sungai, danau dan penyeberangan serta penyelenggara pelabuhan penyeberangan pada pelabuhan yang diusahakan secara komersial dan pelabuhan yang belum diusahakan secara komersial."/>
+        <TextView
+            style="@style/Paragraph.Bold"
+            android:text="Dalam melaksanakan tugas, BPTD Tipe A menyelenggarakan fungsi:"
+            />
+        <TextView
+            style="@style/Paragraph"
+            android:text="1. Penyusunan rencana, program, dan anggaran.\n2. Pelaksanaan pembangunan, pemeliharaan, peningkatan, penyelenggaraan, dan pengawasan terminal penumpang Tipe A, Terminal Barang, Unit Pelaksana Penimbangan Kendaraan Bermotor (UPPKB), pelaksanaan kalibrasi peralatan pengujian berkala kendaraan bermotor, pelaksanaan pemeriksaan fisik rancang bangun sarana angkutan jalan serta pengawasan teknis sarana lalu lintas dan angkutan jalan di jalan nasional dan pengujian berkala kendaraan bermotor dan industri karoseri.\n3. Pelaksanaan manajemen dan rekayasa lalu lintas, pengawasan angkutan orang antar kota antar provinsi, angkutan orang tidak dalam trayek, angkutan barang, penyidikan dan pengusulan sanksi administrasi terhadap pelanggaran peraturan perundang-undangan di bidang lalu lintas dan angkutan jalan, peningkatan kinerja dan keselamatan lalu lintas dan angkutan jalan, serta pengawasan tarif angkutan jalan.\n4. Pelaksanaan pembangunan, pemeliharaan, peningkatan, penyelenggaraan, dan pengawasan pelabuhan sungai, danau dan penyeberangan yang diusahakan secara komersial dan pelabuhan yang belum diusahakan secara komersial, serta pengaturan, pengendalian dan pengawasan angkutan sungai, danau dan penyeberangan yang komersial dan pelabuhan yang belum diusahakan secara komersial, penjaminan keamanan dan ketertiban, penyidikan dan pengusulan sanksi administratif terhadap pelanggaran peraturan perundang-undangan di bidang lalu lintas dan angkutan sungai, danau, dan penyeberangan yang diusahakan secara komersial dan pelabuhan yang belum diusahakan secara komersial, peningkatan kinerja dan keselamatan lalu lintas dan angkutan, pelayanan jasa kepelabuhanan serta pengusulan dan pemantauan tarif dan penjadwalan angkutan sungai, danau, dan penyeberangan yang diusahakan secara komersial dan pelabuhan yang belum diusahakan secara komersial.\n5. Pelaksanaan urusan tata usaha, rumah tangga, kepegawaian, keuangan, hukum, dan hubungan masyarakat.\n6. Pelaksanaan evaluasi dan pelaporan."/>
+    </LinearLayout>
+</ScrollView>

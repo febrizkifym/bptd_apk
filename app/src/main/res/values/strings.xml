@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Profil BPTD Gorontalo</string>
+    <string name="menu_title">MENU UTAMA</string>
+    <string name="btn_profilBalai">Profil Balai</string>
+    <string name="btn_satpel">Satuan\nPelayanan</string>
+    <string name="btn_tentang">Tentang</string>
+    <string name="btn_keluar">Keluar</string>
+    <string name="desc_logokemenhub">Logo Kemenhub</string>
+    <string name="profil_title">BPTD XXI GORONTALO</string>
+    <string name="back_to_menu">Kembali ke Menu</string>
+    <string name="about_ver_title">Version</string>
+    <string name="about_ver_value">1.0.0</string>
+    <string name="about_cby_title">Created By</string>
+    <string name="about_cby_value">Humas BPTD XXI Gorontalo</string>
+    <string name="about_web_title">Website</string>
+    <string name="about_web_value">https://bptdxxigorontalo.com</string>
+    <string name="about_ig_title">Instagram</string>
+    <string name="about_ig_value">bptd_gorontalo</string>
+    <string name="satpel_ppg">PELABUHAN PENYEBERANGAN GORONTALO</string>
+    <string name="satpel_ppm">PELABUHAN PENYEBERANGAN MARISA</string>
+    <string name="satpel_ttad">TERMINAL TIPE A DUNGINGI</string>
+    <string name="satpel_ttai">TERMINAL TIPE A ISIMU</string>
+    <string name="satpel_uppkb_marisa">UPPKB MARISA</string>
+    <string name="satpel_uppkb_molotabu">UPPKB MOLOTABU</string>
+</resources>
