@@ -15,7 +15,7 @@
         android:layout_height="wrap_content">
         <TextView
             style="@style/Paragraph.Title"
-            android:text="Tugas &amp; Fungsi"
+            android:text="@string/title_tusi"
             />
         <TextView
             style="@style/Paragraph"

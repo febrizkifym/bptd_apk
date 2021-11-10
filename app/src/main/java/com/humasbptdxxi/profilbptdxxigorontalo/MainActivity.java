@@ -37,22 +37,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.menu_profil:
-                Intent profilBalaiIntent = new Intent(MainActivity.this,ProfilBalaiActivity.class);
-                startActivity(profilBalaiIntent);
-            break;
-            case R.id.menu_satpel:
-                Intent satpelIntent = new Intent(MainActivity.this,SatpelActivity.class);
-                startActivity(satpelIntent);
-            break;
-            case R.id.menu_tentang:
-                Intent tentangIntent = new Intent(MainActivity.this,AboutActivity.class);
-                startActivity(tentangIntent);
-            break;
-            case R.id.menu_keluar:
-                keluar();
-            break;
+        int id = v.getId();
+        if (id == R.id.menu_profil) {
+            Intent profilBalaiIntent;
+            profilBalaiIntent = new Intent(MainActivity.this, ProfilBalaiActivity.class);
+            startActivity(profilBalaiIntent);
+        } else if (id == R.id.menu_satpel) {
+            Intent satpelIntent;
+            satpelIntent = new Intent(MainActivity.this, SatpelActivity.class);
+            startActivity(satpelIntent);
+        } else if (id == R.id.menu_tentang) {
+            Intent tentangIntent;
+            tentangIntent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(tentangIntent);
+        } else if (id == R.id.menu_keluar) {
+            keluar();
         }
     }
     @Override

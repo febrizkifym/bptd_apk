@@ -14,12 +14,12 @@ public class SatpelActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_satpel);
 
-        cvPPgtlo = (CardView) findViewById(R.id.satpel_ppGtlo);
-        cvPPmarisa = (CardView) findViewById(R.id.satpel_ppMarisa);
-        cvTTAdungingi = (CardView) findViewById(R.id.satpel_ttaDungingi);
-        cvTTAisimu = (CardView) findViewById(R.id.satpel_ttaIsimu);
-        cvUPPKBmarisa = (CardView) findViewById(R.id.satpel_uppkbMarisa);
-        cvUPPKBmolotabu = (CardView) findViewById(R.id.satpel_uppkbMolotabu);
+        cvPPgtlo = findViewById(R.id.satpel_ppGtlo);
+        cvPPmarisa = findViewById(R.id.satpel_ppMarisa);
+        cvTTAdungingi = findViewById(R.id.satpel_ttaDungingi);
+        cvTTAisimu = findViewById(R.id.satpel_ttaIsimu);
+        cvUPPKBmarisa = findViewById(R.id.satpel_uppkbMarisa);
+        cvUPPKBmolotabu = findViewById(R.id.satpel_uppkbMolotabu);
 
         cvPPgtlo.setOnClickListener(this);
         cvPPmarisa.setOnClickListener(this);
@@ -31,25 +31,19 @@ public class SatpelActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.satpel_ppGtlo:
-                Toast.makeText(this,"PP Gorontalo",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.satpel_ppMarisa:
-                Toast.makeText(this,"PP Marisa",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.satpel_ttaDungingi:
-                Toast.makeText(this,"TTA Dungingi",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.satpel_ttaIsimu:
-                Toast.makeText(this,"TTA Isimu",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.satpel_uppkbMarisa:
-                Toast.makeText(this,"UPPKB Marisa",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.satpel_uppkbMolotabu:
-                Toast.makeText(this,"UPPKB Molotabu",Toast.LENGTH_SHORT).show();
-                break;
+        int id = view.getId();
+        if (id == R.id.satpel_ppGtlo) {
+            Toast.makeText(this, "PP Gorontalo", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.satpel_ppMarisa) {
+            Toast.makeText(this, "PP Marisa", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.satpel_ttaDungingi) {
+            Toast.makeText(this, "TTA Dungingi", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.satpel_ttaIsimu) {
+            Toast.makeText(this, "TTA Isimu", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.satpel_uppkbMarisa) {
+            Toast.makeText(this, "UPPKB Marisa", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.satpel_uppkbMolotabu) {
+            Toast.makeText(this, "UPPKB Molotabu", Toast.LENGTH_SHORT).show();
         }
     }
 }

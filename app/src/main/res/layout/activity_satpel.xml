@@ -24,12 +24,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="16dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/boat" />
+                    android:src="@drawable/boat"
+                    android:contentDescription="@string/satpel_ppg" />
 
                 <TextView
                     style="@style/satpelCardTitle"
@@ -46,12 +48,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="16dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/boat" />
+                    android:src="@drawable/boat"
+                    android:contentDescription="@string/satpel_ppm" />
 
                 <TextView
                     style="@style/satpelCardTitle"
@@ -68,12 +72,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="16dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/bus" />
+                    android:src="@drawable/bus"
+                    android:contentDescription="@string/satpel_ttad" />
 
                 <TextView
                     style="@style/satpelCardTitle"
@@ -90,12 +96,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="16dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/bus" />
+                    android:src="@drawable/bus"
+                    android:contentDescription="@string/satpel_ttai" />
 
                 <TextView
                     style="@style/satpelCardTitle"
@@ -112,12 +120,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="16dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/truck" />
+                    android:src="@drawable/truck"
+                    android:contentDescription="@string/satpel_uppkb_marisa" />
 
                 <TextView
                     style="@style/satpelCardTitle"
@@ -134,12 +144,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
+                android:padding="16dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/truck" />
+                    android:src="@drawable/truck"
+                    android:contentDescription="@string/satpel_uppkb_molotabu" />
 
                 <TextView
                     style="@style/satpelCardTitle"
