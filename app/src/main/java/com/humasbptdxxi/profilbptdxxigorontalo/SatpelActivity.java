@@ -3,6 +3,7 @@ package com.humasbptdxxi.profilbptdxxigorontalo;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -33,7 +34,10 @@ public class SatpelActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         int id = view.getId();
         if (id == R.id.satpel_ppGtlo) {
-            Toast.makeText(this, "PP Gorontalo", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "PP Gorontalo", Toast.LENGTH_SHORT).show();
+            Intent profilPPG;
+            profilPPG = new Intent(SatpelActivity.this, ProfilPPGActivity.class);
+            startActivity(profilPPG);
         } else if (id == R.id.satpel_ppMarisa) {
             Toast.makeText(this, "PP Marisa", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.satpel_ttaDungingi) {

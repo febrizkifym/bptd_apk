@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".ProfilPPGActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/Paragraph.Title"
+            android:text="PELABUHAN PENYEBERANGAN GORONTALO"
+            />
+        <TextView
+            style="@style/Paragraph"
+            android:text="Pelabuhan Penyeberangan Gorontalo terletak di Kelurahan Leato Selatan, Kota Timur, Kota Gorontalo.\nPelabuhan ini memiliki 2 lintasan yang dilayani yaitu"/>
+        <TextView
+            style="@style/Paragraph"
+            android:text="1. Lintas Komersil dengan rute Gorontalo-Pagimana dengan kapal yang beroperasi adalah KMP.Moinit"
+            />
+        <TextView
+            style="@style/Paragraph"
+            android:text="2. Lintas Perintis dengan rute Gorontalo-Wakai-Ampana dengan kapal yang beroperasi adalah KMP.Tuna Tomini"
+            />
+        <Button
+            android:id="@+id/detail_kapal_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Kapal"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#DCDCDC"/>
+        <TextView
+            style="@style/Paragraph.Bold"
+            android:text="Letak Pelabuhan Penyeberangan Gorontalo"
+            />
+        <TextView
+            style="@style/Paragraph"
+            android:text="//map goes here"
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.humasbptdxxi.profilbptdxxigorontalo">
+    package="com.humasbptdxxi.profilbptdxxigorontalo" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:theme="@style/Theme.ProfilBPTDGorontalo">
+        android:theme="@style/Theme.ProfilBPTDGorontalo" >
+        <activity
+            android:name=".KapalPPGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilPPGActivity"
+            android:exported="false" />
         <activity
             android:name=".ProfilBalaiActivity"
             android:exported="true" />
@@ -20,7 +26,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -30,9 +36,10 @@
         <activity
             android:name=".SplashScreen"
             android:exported="true"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

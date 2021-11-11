@@ -19,10 +19,10 @@
             />
         <TextView
             style="@style/Paragraph"
-            android:text="BPTD Tipe A, mempunyai tugas melaksanakan pengelolaan lalu lintas dan angkutan jalan, sungai, danau dan penyeberangan serta penyelenggara pelabuhan penyeberangan pada pelabuhan yang diusahakan secara komersial dan pelabuhan yang belum diusahakan secara komersial."/>
+            android:text="Balai Pengelola Transportasi Darat mempunyai tugas melaksanakan pengelolaan lalu lintas dan angkutan jalan, sungai, danau dan penyeberangan serta penyelenggara pelabuhan penyeberangan pada pelabuhan yang diusahakan secara komersial dan pelabuhan yang belum diusahakan secara komersial."/>
         <TextView
             style="@style/Paragraph.Bold"
-            android:text="Dalam melaksanakan tugas, BPTD Tipe A menyelenggarakan fungsi:"
+            android:text="Dalam melaksanakan tugas, BPTD menyelenggarakan fungsi:"
             />
         <TextView
             style="@style/Paragraph"
