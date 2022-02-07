@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    CardView cvProfil,cvSatpel,cvTentang,cvKeluar;
+    CardView cvPelabuhan,cvTerminal,cvTentang,cvKeluar;
     public void keluar(){
         AlertDialog.Builder keluar = new AlertDialog.Builder(MainActivity.this);
         keluar.setMessage("Keluar Aplikasi?").setCancelable(false).setPositiveButton("Ya", (dialogInterface, i) -> {
@@ -25,27 +25,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        cvProfil = findViewById(R.id.menu_profil);
-        cvSatpel = findViewById(R.id.menu_satpel);
+        cvTerminal = findViewById(R.id.menu_terminal);
+        cvPelabuhan = findViewById(R.id.menu_pelabuhan);
         cvTentang = findViewById(R.id.menu_tentang);
         cvKeluar = findViewById(R.id.menu_keluar);
 
-        cvProfil.setOnClickListener(this);
-        cvSatpel.setOnClickListener(this);
+        cvTerminal.setOnClickListener(this);
+        cvPelabuhan.setOnClickListener(this);
         cvTentang.setOnClickListener(this);
         cvKeluar.setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (id == R.id.menu_profil) {
-            Intent profilBalaiIntent;
-            profilBalaiIntent = new Intent(MainActivity.this, ProfilBalaiActivity.class);
-            startActivity(profilBalaiIntent);
-        } else if (id == R.id.menu_satpel) {
-            Intent satpelIntent;
-            satpelIntent = new Intent(MainActivity.this, SatpelActivity.class);
-            startActivity(satpelIntent);
+        if (id == R.id.menu_terminal) {
+            Intent TerminalIntent;
+            TerminalIntent = new Intent(MainActivity.this, TerminalActivity.class);
+            startActivity(TerminalIntent);
+        } else if (id == R.id.menu_pelabuhan) {
+            Intent PelabuhanIntent;
+            PelabuhanIntent = new Intent(MainActivity.this, PelabuhanActivity.class);
+            startActivity(PelabuhanIntent);
         } else if (id == R.id.menu_tentang) {
             Intent tentangIntent;
             tentangIntent = new Intent(MainActivity.this, AboutActivity.class);

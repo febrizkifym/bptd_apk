@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:gravity="center"
-                android:text="@string/menu_title"
+                android:text="PELABUHAN PENYEBERANGAN"
                 android:textAlignment="center"
                 android:textColor="#3d73c4"
                 android:textSize="30sp"
@@ -40,38 +40,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
-            android:columnCount="2"
+            android:columnCount="1"
             android:columnOrderPreserved="false"
             android:rowCount="3">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/menu_terminal"
-                style="@style/menuCard"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:contentDescription="@string/desc_logokemenhub"
-                        android:src="@drawable/bus" />
-
-                    <TextView
-                        style="@style/menuButton"
-                        android:text="@string/btn_terminal" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_pelabuhan"
+                android:id="@+id/menu_ppg"
                 style="@style/menuCard"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
@@ -92,12 +66,12 @@
 
                     <TextView
                         style="@style/menuButton"
-                        android:text="@string/btn_pelabuhan" />
+                        android:text="Pelabuhan Penyeberangan Kota Gorontalo" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/menu_tentang"
+                android:id="@+id/menu_ppm"
                 style="@style/menuCard"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp">
@@ -114,37 +88,11 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:contentDescription="@string/desc_logokemenhub"
-                        android:src="@drawable/warning" />
+                        android:src="@drawable/boat" />
 
                     <TextView
                         style="@style/menuButton"
-                        android:text="@string/btn_tentang" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_keluar"
-                style="@style/menuCard"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    tools:ignore="UseCompoundDrawables">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:contentDescription="@string/desc_logokemenhub"
-                        android:src="@drawable/keluar" />
-
-                    <TextView
-                        style="@style/menuButton"
-                        android:text="@string/btn_keluar" />
+                        android:text="Pelabuhan Penyeberangan Marisa" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

@@ -5,16 +5,20 @@
       <map>
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24114583333333334" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/drawable/background_splash.xml" value="0.10989583333333333" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/drawable/bg_gradient.xml" value="0.23743589743589744" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24114583333333334" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/drawable/ic_logo_humas.xml" value="0.10989583333333333" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/drawable/logokemenhub.xml" value="0.10989583333333333" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_about.xml" value="0.1" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_kapal_ppg.xml" value="0.21467391304347827" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_main.xml" value="0.2210144927536232" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_pelabuhan.xml" value="0.2" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_profil_balai.xml" value="0.2210144927536232" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_profil_ppg.xml" value="0.21467391304347827" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_satpel.xml" value="0.19692307692307692" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_moinit.xml" value="0.21467391304347827" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_terminal.xml" value="0.2" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_moinit.xml" value="0.33" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_ppg.xml" value="0.21467391304347827" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_tuna.xml" value="0.21467391304347827" />
       </map>

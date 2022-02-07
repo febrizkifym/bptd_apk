@@ -1,16 +1,13 @@
 <resources>
     <string name="app_name">Profil BPTD Gorontalo</string>
-    <string name="menu_title">MENU UTAMA</string>
+    <string name="menu_title">BPTD WILAYAH XXI PROVINSI GORONTALO</string>
 
-    <string name="btn_profilBalai">Profil Balai</string>
-    <string name="btn_satpel">Satuan\nPelayanan</string>
     <string name="btn_tentang">Tentang</string>
     <string name="btn_keluar">Keluar</string>
 
     <string name="desc_logokemenhub">Logo Kemenhub</string>
 
     <string name="profil_title">BPTD XXI GORONTALO</string>
-    <string name="back_to_menu">Kembali ke Menu</string>
 
     <string name="about_ver_title">Version</string>
     <string name="about_ver_value">1.0.0</string>
@@ -33,5 +30,8 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kmp_moinit">KMP. MOINIT</string>
+    <string name="kmp_tuna_tomini">KMP. TUNA TOMINI</string>
+    <string name="btn_pelabuhan">Pelabuhan Penyeberangan</string>
+    <string name="btn_terminal">Terminal Penumpang</string>
 </resources>

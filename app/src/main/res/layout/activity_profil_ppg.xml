@@ -32,7 +32,7 @@
             android:id="@+id/detail_kapal_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detail Kapal"
+            android:text="Jadwal Kapal"
             />
         <View
             android:layout_width="match_parent"

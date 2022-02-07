@@ -18,12 +18,12 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KMP. MOINIT" />
+            android:text="@string/kmp_moinit" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KMP. TUNA TOMINI" />
+            android:text="@string/kmp_tuna_tomini" />
 
 
     </com.google.android.material.tabs.TabLayout>
