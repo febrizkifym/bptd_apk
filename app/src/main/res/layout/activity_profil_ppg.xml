@@ -1,53 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
     tools:context=".ProfilPPGActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            style="@style/Paragraph.Title"
-            android:text="PELABUHAN PENYEBERANGAN GORONTALO"
-            />
-        <TextView
-            style="@style/Paragraph"
-            android:text="Pelabuhan Penyeberangan Gorontalo terletak di Kelurahan Leato Selatan, Kota Timur, Kota Gorontalo.\nPelabuhan ini memiliki 2 lintasan yang dilayani yaitu"/>
-        <TextView
-            style="@style/Paragraph"
-            android:text="1. Lintas Komersil dengan rute Gorontalo-Pagimana dengan kapal yang beroperasi adalah KMP.Moinit"
-            />
-        <TextView
-            style="@style/Paragraph"
-            android:text="2. Lintas Perintis dengan rute Gorontalo-Wakai-Ampana dengan kapal yang beroperasi adalah KMP.Tuna Tomini"
-            />
-        <Button
-            android:id="@+id/detail_kapal_btn"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/btn_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_button"
+        app:title="Pelabuhan Gorontalo"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jadwal Kapal"
-            />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="#DCDCDC"/>
-        <TextView
-            style="@style/Paragraph.Bold"
-            android:text="Letak Pelabuhan Penyeberangan Gorontalo"
-            />
-        <TextView
-            style="@style/Paragraph"
-            android:text="//map goes here"
-            />
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp">
 
-    </LinearLayout>
-</ScrollView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ppg" />
+
+            <TextView
+                style="@style/Paragraph"
+                android:text="Pelabuhan Penyeberangan Gorontalo terletak di Kelurahan Leato Selatan, Kota Timur, Kota Gorontalo.\nPelabuhan ini memiliki 2 lintasan yang dilayani yaitu" />
+
+            <TextView
+                style="@style/Paragraph"
+                android:text="1. Lintas Komersil dengan rute Gorontalo-Pagimana dengan kapal yang beroperasi adalah KMP.Moinit" />
+
+            <TextView
+                style="@style/Paragraph"
+                android:text="2. Lintas Perintis dengan rute Gorontalo-Wakai-Ampana dengan kapal yang beroperasi adalah KMP.Tuna Tomini" />
+
+            <Button
+                android:id="@+id/detail_kapal_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jadwal Kapal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#DCDCDC" />
+
+            <TextView
+                style="@style/Paragraph.Bold"
+                android:layout_marginBottom="10dp"
+                android:text="Letak Pelabuhan Penyeberangan Gorontalo" />
+
+            <ImageView
+                android:id="@+id/ppg_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ppg_map" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

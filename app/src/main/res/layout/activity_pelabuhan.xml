@@ -9,93 +9,106 @@
     android:background="@drawable/bg_gradient"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/btn_back"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:ignore="UselessParent">
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        app:navigationIcon="@drawable/ic_back_button"
+        app:title="Pelabuhan"
+        app:titleTextColor="@color/white"/>
 
-        <RelativeLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="50dp"
-            android:gravity="center">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:gravity="center"
-                android:text="PELABUHAN PENYEBERANGAN"
-                android:textAlignment="center"
-                android:textColor="#3d73c4"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center">
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alignmentMode="alignMargins"
-            android:columnCount="1"
-            android:columnOrderPreserved="false"
-            android:rowCount="3">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_ppg"
-                style="@style/menuCard"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    tools:ignore="UseCompoundDrawables">
+                    android:text="PELABUHAN PENYEBERANGAN"
+                    android:textAlignment="center"
+                    android:textColor="#3d73c4"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:contentDescription="@string/desc_logokemenhub"
-                        android:src="@drawable/boat" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
 
-                    <TextView
-                        style="@style/menuButton"
-                        android:text="Pelabuhan Penyeberangan Kota Gorontalo" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/menu_ppg"
+                    style="@style/menuCard"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_ppm"
-                style="@style/menuCard"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/desc_logokemenhub"
+                            android:src="@drawable/boat" />
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:contentDescription="@string/desc_logokemenhub"
-                        android:src="@drawable/boat" />
+                        <TextView
+                            style="@style/menuButton"
+                            android:text="Pelabuhan Penyeberangan Kota Gorontalo" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        style="@style/menuButton"
-                        android:text="Pelabuhan Penyeberangan Marisa" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/menu_ppm"
+                    style="@style/menuCard"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
 
-        </GridLayout>
-    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/desc_logokemenhub"
+                            android:src="@drawable/boat" />
+
+                        <TextView
+                            style="@style/menuButton"
+                            android:text="Pelabuhan Penyeberangan Marisa" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

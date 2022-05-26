@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Profil BPTD Gorontalo</string>
-    <string name="menu_title">BPTD WILAYAH XXI PROVINSI GORONTALO</string>
+    <string name="app_name">SITERPAL</string>
+    <string name="menu_title">Sistem Infromasi Terminal dan Pelabuhan Penyeberangan</string>
 
     <string name="btn_tentang">Tentang</string>
     <string name="btn_keluar">Keluar</string>
@@ -11,7 +11,7 @@
 
     <string name="about_ver_title">Version</string>
     <string name="about_ver_value">1.0.0</string>
-    <string name="about_cby_title">Created By</string>
+    <string name="about_cby_title">Copyi</string>
     <string name="about_cby_value">Humas BPTD XXI Gorontalo</string>
     <string name="about_web_title">Website</string>
     <string name="about_web_value">https://bptdxxigorontalo.com</string>
@@ -29,7 +29,6 @@
     <string name="title_activity_kapal_ppg">KapalPPG</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="kmp_moinit">KMP. MOINIT</string>
     <string name="kmp_tuna_tomini">KMP. TUNA TOMINI</string>
     <string name="btn_pelabuhan">Pelabuhan Penyeberangan</string>
