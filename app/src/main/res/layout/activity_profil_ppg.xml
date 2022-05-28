@@ -4,83 +4,202 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".ProfilPPGActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/btn_back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/design_default_color_primary_dark"
+        android:background="@color/primaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_back_button"
-        app:title="Pelabuhan Gorontalo"
         app:titleTextColor="@color/white" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_back">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="16dp"
-            android:paddingTop="10dp"
-            android:paddingRight="16dp">
+            android:paddingBottom="100dp"
+            android:orientation="vertical">
 
-            <ImageView
+            <TextView
+                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/ppg" />
+                android:fontFamily="@font/poppins_regular"
+                android:text="Pelabuhan Penyeberangan"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                style="@style/Paragraph"
-                android:text="Pelabuhan Penyeberangan Gorontalo terletak di Kelurahan Leato Selatan, Kota Timur, Kota Gorontalo.\nPelabuhan ini memiliki 2 lintasan yang dilayani yaitu" />
-
-            <TextView
-                style="@style/Paragraph"
-                android:text="1. Lintas Komersil dengan rute Gorontalo-Pagimana dengan kapal yang beroperasi adalah KMP.Moinit" />
-
-            <TextView
-                style="@style/Paragraph"
-                android:text="2. Lintas Perintis dengan rute Gorontalo-Wakai-Ampana dengan kapal yang beroperasi adalah KMP.Tuna Tomini" />
-
-            <Button
-                android:id="@+id/detail_kapal_btn"
+                android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jadwal Kapal" />
+                android:fontFamily="@font/poppins_bold"
+                android:text="Gorontalo"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#DCDCDC" />
-
-            <TextView
-                style="@style/Paragraph.Bold"
-                android:layout_marginBottom="10dp"
-                android:text="Letak Pelabuhan Penyeberangan Gorontalo" />
-
-            <ImageView
-                android:id="@+id/ppg_map"
+            <GridLayout
+                android:id="@+id/gridLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:clickable="true"
-                android:focusable="true"
-                android:src="@drawable/ppg_map" />
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="3"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:layout_editor_absoluteX="16dp">
 
-        </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/menu_profil"
+                    style="@style/menuCard"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/desc_logokemenhub"
+                            android:src="@drawable/boat" />
+
+                        <TextView
+                            style="@style/menuButton"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Profil"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/menu_jadwal"
+                    style="@style/menuCard"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/desc_logokemenhub"
+                            android:src="@drawable/jadwal" />
+
+                        <TextView
+                            style="@style/menuButton"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Jadwal Kapal"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/menu_tarif"
+                    style="@style/menuCard"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/desc_logokemenhub"
+                            android:src="@drawable/tiket" />
+
+                        <TextView
+                            style="@style/menuButton"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Tarif Angkutan"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/menu_lokasi"
+                    style="@style/menuCard"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/desc_logokemenhub"
+                            android:src="@drawable/lokasi" />
+
+                        <TextView
+                            style="@style/menuButton"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Lokasi Pelabuhan"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+<!--            <Button-->
+<!--                android:id="@+id/detail_kapal_btn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Jadwal Kapal" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/ppg_map"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:src="@drawable/ppg_map" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

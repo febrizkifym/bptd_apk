@@ -24,6 +24,7 @@ public class PelabuhanActivity extends AppCompatActivity implements View.OnClick
         cvPPG.setOnClickListener(this);
         cvPPM.setOnClickListener(this);
 
+        toolbar.setTitleTextAppearance(this,R.style.ToolbarFont);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

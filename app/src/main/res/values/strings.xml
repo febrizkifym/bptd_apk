@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SITERPAL</string>
-    <string name="menu_title">Sistem Infromasi Terminal dan Pelabuhan Penyeberangan</string>
+    <string name="menu_title">Selamat Datang,</string>
 
     <string name="btn_tentang">Tentang</string>
     <string name="btn_keluar">Keluar</string>
