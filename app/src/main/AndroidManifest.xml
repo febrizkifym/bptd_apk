@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.humasbptdxxi.profilbptdxxigorontalo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,25 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.ProfilBPTDGorontalo">
         <activity
-            android:name=".ProfilDungingi"
+            android:name=".JadwalPPM"
+            android:exported="false" />
+        <activity
+            android:name=".JadwalPPG"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilPPMActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TarifPPMActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PPMActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilPPGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilDungingiActivity"
             android:exported="false" />
         <activity
             android:name=".TerminalActivity"
@@ -19,14 +39,11 @@
             android:name=".PelabuhanActivity"
             android:exported="false" />
         <activity
-            android:name=".KapalPPGActivity"
+            android:name=".TarifPPGActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfilPPGActivity"
+            android:name=".PPGActivity"
             android:exported="false" />
-        <activity
-            android:name=".ProfilBalaiActivity"
-            android:exported="true" />
         <activity
             android:name=".SatpelActivity"
             android:exported="true" />

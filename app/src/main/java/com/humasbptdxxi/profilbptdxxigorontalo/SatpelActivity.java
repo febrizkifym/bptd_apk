@@ -36,7 +36,7 @@ public class SatpelActivity extends AppCompatActivity implements View.OnClickLis
         if (id == R.id.satpel_ppGtlo) {
 //            Toast.makeText(this, "PP Gorontalo", Toast.LENGTH_SHORT).show();
             Intent profilPPG;
-            profilPPG = new Intent(SatpelActivity.this, ProfilPPGActivity.class);
+            profilPPG = new Intent(SatpelActivity.this, PPGActivity.class);
             startActivity(profilPPG);
         } else if (id == R.id.satpel_ppMarisa) {
             Toast.makeText(this, "PP Marisa", Toast.LENGTH_SHORT).show();

@@ -11,8 +11,6 @@
 
     <string name="about_ver_title">Version</string>
     <string name="about_ver_value">1.0.0</string>
-    <string name="about_cby_title">Copyi</string>
-    <string name="about_cby_value">Humas BPTD XXI Gorontalo</string>
     <string name="about_web_title">Website</string>
     <string name="about_web_value">https://bptdxxigorontalo.com</string>
     <string name="about_ig_title">Instagram</string>
@@ -25,12 +23,18 @@
     <string name="satpel_uppkb_marisa">UPPKB MARISA</string>
     <string name="satpel_uppkb_molotabu">UPPKB MOLOTABU</string>
 
-    <string name="title_tusi"><![CDATA[Tugas & Fungsi]]></string>
-    <string name="title_activity_kapal_ppg">KapalPPG</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
     <string name="kmp_moinit">KMP. MOINIT</string>
     <string name="kmp_tuna_tomini">KMP. TUNA TOMINI</string>
     <string name="btn_pelabuhan">Pelabuhan Penyeberangan</string>
     <string name="btn_terminal">Terminal Penumpang</string>
+    <string name="jadwal_kapal">Jadwal Kapal</string>
+    <string name="profil">Profil</string>
+    <string name="tarif_angkutan">Tarif Angkutan</string>
+    <string name="lokasi_pelabuhan">Lokasi Pelabuhan</string>
+    <string name="gorontalo">Gorontalo</string>
+    <string name="pelabuhan_penyeberangan">Pelabuhan Penyeberangan</string>
+    <string name="pelabuhan_penyeberangan_uppercase">PELABUHAN PENYEBERANGAN</string>
+    <string name="pelabuhan_penyeberangan_gorontalo">Pelabuhan Penyeberangan Gorontalo</string>
+    <string name="pelabuhan_penyeberangan_marisa">Pelabuhan Penyeberangan Marisa</string>
+    <string name="marisa">Marisa</string>
 </resources>

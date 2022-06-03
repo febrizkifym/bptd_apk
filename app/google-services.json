@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "564849907453",
+    "project_id": "siterpal-52f08",
+    "storage_bucket": "siterpal-52f08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564849907453:android:566b331bdf969170dd5094",
+        "android_client_info": {
+          "package_name": "com.humasbptdxxi.profilbptdxxigorontalo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564849907453-c0j2tk5secucoebf0a7b17254oqt864t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL6OlAwTa1L65kdSug4Rq7LK5c7AtsmwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564849907453-c0j2tk5secucoebf0a7b17254oqt864t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

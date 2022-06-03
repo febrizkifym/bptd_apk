@@ -45,7 +45,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center"
-                    android:text="PELABUHAN PENYEBERANGAN"
+                    android:text="@string/pelabuhan_penyeberangan_uppercase"
                     android:textAlignment="center"
                     android:textColor="@color/primary"
                     android:textSize="30sp"
@@ -85,7 +85,7 @@
                         <TextView
                             style="@style/menuButton"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="Pelabuhan Penyeberangan Kota Gorontalo" />
+                            android:text="@string/pelabuhan_penyeberangan_gorontalo" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -112,7 +112,7 @@
                         <TextView
                             style="@style/menuButton"
                             android:fontFamily="@font/poppins_regular"
-                            android:text="Pelabuhan Penyeberangan Marisa" />
+                            android:text="@string/pelabuhan_penyeberangan_marisa" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 

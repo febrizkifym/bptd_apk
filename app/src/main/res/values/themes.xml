@@ -61,30 +61,4 @@
         <item name="android:windowBackground">@drawable/background_splash</item>
     </style>
 
-    <style name="Paragraph">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:lineSpacingExtra">5dp</item>
-        <item name="android:layout_marginBottom">5dp</item>
-        <item name="android:layout_marginTop">5dp</item>
-    </style>
-
-    <style name="Paragraph.Bold" parent="@style/Paragraph">
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="Paragraph.Title" parent="@style/Paragraph">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:layout_marginBottom">16dp</item>
-    </style>
-
-    <style name="Theme.ProfilBPTDGorontalo.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="Theme.ProfilBPTDGorontalo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.ProfilBPTDGorontalo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

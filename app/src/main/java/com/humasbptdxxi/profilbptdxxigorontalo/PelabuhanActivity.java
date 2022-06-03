@@ -38,10 +38,11 @@ public class PelabuhanActivity extends AppCompatActivity implements View.OnClick
         int id = v.getId();
         if (id == R.id.menu_ppg){
             Intent PPGIntent;
-            PPGIntent = new Intent(PelabuhanActivity.this,ProfilPPGActivity.class);
+            PPGIntent = new Intent(PelabuhanActivity.this, PPGActivity.class);
             startActivity(PPGIntent);
         } else if (id == R.id.menu_ppm){
-            Toast.makeText(this,"Pelabuhan Penyeberangan Marisa",Toast.LENGTH_SHORT).show();
+            Intent PPMIntent = new Intent(PelabuhanActivity.this,PPMActivity.class);
+            startActivity(PPMIntent);
         }
     }
 }

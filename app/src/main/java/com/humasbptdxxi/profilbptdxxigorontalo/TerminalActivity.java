@@ -1,6 +1,7 @@
 package com.humasbptdxxi.profilbptdxxigorontalo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 public class TerminalActivity extends AppCompatActivity implements View.OnClickListener {
     CardView cvDungingi,cvIsimu;
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,9 +18,13 @@ public class TerminalActivity extends AppCompatActivity implements View.OnClickL
 
         cvDungingi = findViewById(R.id.menu_dungingi);
         cvIsimu = findViewById(R.id.menu_isimu);
+        toolbar = findViewById(R.id.btn_back);
 
         cvDungingi.setOnClickListener(this);
         cvIsimu.setOnClickListener(this);
+
+        toolbar.setTitleTextAppearance(this,R.style.ToolbarFont);
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
     }
 
     @Override
