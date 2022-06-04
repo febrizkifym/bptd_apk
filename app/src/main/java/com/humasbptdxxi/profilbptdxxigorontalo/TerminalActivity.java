@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -31,7 +32,8 @@ public class TerminalActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         int id = v.getId();
         if(id == R.id.menu_dungingi){
-            Toast.makeText(this,"Terminal Tipe A Dungingi", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(TerminalActivity.this,DungingiActivity.class);
+            startActivity(intent);
         }else if(id == R.id.menu_isimu){
             Toast.makeText(this,"Terminal Tipe A Isimu", Toast.LENGTH_SHORT).show();
         }

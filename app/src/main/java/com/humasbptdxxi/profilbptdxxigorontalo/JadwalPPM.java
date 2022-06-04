@@ -3,6 +3,8 @@ package com.humasbptdxxi.profilbptdxxigorontalo;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,6 +13,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -41,7 +45,12 @@ import java.util.Locale;
 public class JadwalPPM extends AppCompatActivity {
     Toolbar toolbar;
     TextView TvEvent,TvStatus;
-    ListView LvEvent;
+    Context context;
+    RecyclerView recyclerView;
+    RecyclerView.Adapter recyclerViewAdapter;
+    RecyclerView.LayoutManager recyclerViewLayoutManager;
+    List<String> namaKapal = new ArrayList<String>();
+    List<String> keterangan = new ArrayList<String>();
     private static final String TAG = "MyActivity";
     public static String result;
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -55,13 +64,15 @@ public class JadwalPPM extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
         TvEvent = findViewById(R.id.event);
         TvEvent.setSingleLine(false);
-
-        LvEvent = findViewById(R.id.LvEvent);
         TvStatus = findViewById(R.id.status);
+
+
 
         final ProgressBar progressBar = findViewById(R.id.progressBar);
         progressBar.setVisibility(View.VISIBLE);
         final CompactCalendarView jadwalCalendar = findViewById(R.id.jadwal);
+        Locale idLocale = new Locale("in","ID");
+        Log.d(TAG,"checkpoint");
         String url = "https://www.bptdxxigorontalo.com/jadwal";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, response -> {
             progressBar.setVisibility(View.INVISIBLE);
@@ -81,11 +92,15 @@ public class JadwalPPM extends AppCompatActivity {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    String keterangan = j.getString("kapal") + " " + j.get("keterangan");
+                    String keterangan = String.valueOf(j.get("keterangan"));
                     if (j.getString("id_kapal").equals("3")) {
                         Event titik = new Event(Color.GREEN, tanggal, keterangan);
                         jadwalCalendar.addEvent(titik);
                     }
+                    Date c = Calendar.getInstance().getTime();
+                    SimpleDateFormat td = new SimpleDateFormat("EEEE, dd MMM yyyy",idLocale);
+                    TvStatus.setText(td.format(c));
+                    TvEvent.setText("");
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -95,28 +110,50 @@ public class JadwalPPM extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Tidak dapat terhubung ke internet. Mohon coba lagi", Toast.LENGTH_SHORT).show();
+                onBackPressed();
             }
         });
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
+        jadwalCalendar.shouldScrollMonth(true);
 
         jadwalCalendar.setListener(new CompactCalendarView.CompactCalendarViewListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onDayClick(Date dateClicked) {
                 TvEvent.setText("");
+                namaKapal.clear();
+                keterangan.clear();
                 if(!jadwalCalendar.getEvents(dateClicked).isEmpty()){
                     List<Event> events = jadwalCalendar.getEvents(dateClicked);
                     for(int i=0;i<jadwalCalendar.getEvents(dateClicked).size();i++){
-                        String formatTanggal = getDate(events.get(i).getTimeInMillis(),"dd/MM/yyyy");
-                        TvStatus.setText("Status : "+formatTanggal);
-                        TvEvent.append("- "+ events.get(i).getData() +"\n");
-                        Log.d("FETCHDATA", (String) events.get(i).getData());
+                        String formatTanggal = getDate(events.get(i).getTimeInMillis(),"EEEE, dd MMM yyyy");
+                        TvStatus.setText(formatTanggal);
+                        Log.d("FETCHDATA", String.valueOf(events));
+                        if(events.get(i).getColor() == Color.GREEN){
+                            namaKapal.add("KMP. CENGKIH AFO");
+                        }
+                        keterangan.add(String.valueOf(events.get(i).getData()));
+                        context = getApplicationContext();
+                        recyclerView = findViewById(R.id.LvEvent);
+                        recyclerViewLayoutManager = new LinearLayoutManager(context);
+                        recyclerView.setLayoutManager(recyclerViewLayoutManager);
+                        recyclerViewAdapter = new AdapterJadwalPPG(context,namaKapal,keterangan);
+                        recyclerView.setAdapter(recyclerViewAdapter);
                     }
                 }else{
-                    TvStatus.setText("Status : ");
+                    SimpleDateFormat td = new SimpleDateFormat("EEEE, dd MMM yyyy",idLocale);
+                    TvStatus.setText(td.format(dateClicked));
                     TvEvent.setText("Tidak ada jadwal pada tanggal ini.");
+                    namaKapal.clear();
+                    keterangan.clear();
+                    context = getApplicationContext();
+                    recyclerView = findViewById(R.id.LvEvent);
+                    recyclerViewLayoutManager = new LinearLayoutManager(context);
+                    recyclerView.setLayoutManager(recyclerViewLayoutManager);
+                    recyclerViewAdapter = new AdapterJadwalPPG(context,namaKapal,keterangan);
+                    recyclerView.setAdapter(recyclerViewAdapter);
                 }
             }
 
@@ -125,10 +162,12 @@ public class JadwalPPM extends AppCompatActivity {
 
             }
         });
+
     }
     public static String getDate(long milliSeconds, String dateFormat)
     {
-        SimpleDateFormat formatter = new SimpleDateFormat(dateFormat);
+        Locale id = new Locale("in","ID");
+        SimpleDateFormat formatter = new SimpleDateFormat(dateFormat,id);
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(milliSeconds);

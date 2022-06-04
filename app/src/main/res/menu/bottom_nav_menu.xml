@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profil_nav"
+        android:title="Profil"
+        android:icon="@drawable/bus"/>
+    <item
+        android:id="@+id/jadwal_nav"
+        android:title="Jadwal"
+        android:icon="@drawable/jadwal"/>
+    <item
+        android:id="@+id/tarif_nav"
+        android:title="Tarif"
+        android:icon="@drawable/tiket"/>
+    <item
+        android:id="@+id/lokasi_nav"
+        android:title="Lokasi"
+        android:icon="@drawable/lokasi"/>
+</menu>
