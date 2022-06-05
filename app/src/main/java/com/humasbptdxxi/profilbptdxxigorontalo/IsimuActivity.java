@@ -14,18 +14,18 @@ import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.Locale;
 
-public class DungingiActivity extends AppCompatActivity {
+public class IsimuActivity extends AppCompatActivity {
 
     Toolbar toolbar;
 
     BottomNavigationView bottomNavigationView;
-    DungingiJadwalFragment dungingiJadwalFragment = new DungingiJadwalFragment();
-    DungingiProfilFragment dungingiProfilFragment = new DungingiProfilFragment();
+    IsimuJadwalFragment isimuJadwalFragment = new IsimuJadwalFragment();
+    IsimuProfilFragment isimuProfilFragment = new IsimuProfilFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dungingi);
+        setContentView(R.layout.activity_isimu);
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         toolbar = findViewById(R.id.btn_back);
@@ -33,17 +33,17 @@ public class DungingiActivity extends AppCompatActivity {
         toolbar.setTitleTextAppearance(this,R.style.ToolbarFont);
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,dungingiProfilFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,isimuProfilFragment).commit();
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.profil_nav:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,dungingiProfilFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,isimuProfilFragment).commit();
                         return true;
                     case R.id.jadwal_nav:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,dungingiJadwalFragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,isimuJadwalFragment).commit();
                         return true;
                     case R.id.lokasi_nav:
                         bottomNavigationView.setSelectedItemId(R.id.profil_nav);

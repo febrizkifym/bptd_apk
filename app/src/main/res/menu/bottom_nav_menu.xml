@@ -6,11 +6,7 @@
         android:icon="@drawable/bus"/>
     <item
         android:id="@+id/jadwal_nav"
-        android:title="Jadwal"
-        android:icon="@drawable/jadwal"/>
-    <item
-        android:id="@+id/tarif_nav"
-        android:title="Tarif"
+        android:title="Trayek"
         android:icon="@drawable/tiket"/>
     <item
         android:id="@+id/lokasi_nav"

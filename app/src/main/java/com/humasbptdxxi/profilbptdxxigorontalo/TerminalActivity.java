@@ -35,7 +35,8 @@ public class TerminalActivity extends AppCompatActivity implements View.OnClickL
             Intent intent = new Intent(TerminalActivity.this,DungingiActivity.class);
             startActivity(intent);
         }else if(id == R.id.menu_isimu){
-            Toast.makeText(this,"Terminal Tipe A Isimu", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(TerminalActivity.this, IsimuActivity.class);
+            startActivity(intent);
         }
     }
 }

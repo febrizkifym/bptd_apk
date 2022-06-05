@@ -28,6 +28,13 @@
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
         <item name="android:clickable">true</item>
     </style>
+    <style name="staticCard">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">12dp</item>
+    </style>
 
     <style name="menuButton">
         <item name="android:layout_width">wrap_content</item>

@@ -18,6 +18,7 @@
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/font/main_font.xml" value="0.18888888888888888" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_about.xml" value="0.1" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_dungingi.xml" value="0.1641025641025641" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_isimu.xml" value="0.1641025641025641" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_jadwal_ppg.xml" value="0.25" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_jadwal_ppm.xml" value="0.18461538461538463" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_kapal_ppg.xml" value="0.21467391304347827" />
@@ -34,14 +35,18 @@
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_tarif_ppg.xml" value="0.18461538461538463" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_tarif_ppm.xml" value="0.25" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/activity_terminal.xml" value="0.2" />
-        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_dungingi_jadwal.xml" value="0.1641025641025641" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_dungingi_jadwal.xml" value="0.1620253164556962" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_dungingi_lokasi.xml" value="0.15256410256410258" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_dungingi_profil.xml" value="0.1641025641025641" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_dungingi_tarif.xml" value="0.1641025641025641" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_isimu_jadwal.xml" value="0.1641025641025641" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_isimu_lokasi.xml" value="0.1641025641025641" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_isimu_profil.xml" value="0.15256410256410258" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_moinit.xml" value="0.18" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_ppg.xml" value="0.21467391304347827" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/fragment_tuna.xml" value="0.21467391304347827" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/list_jadwal_ppg.xml" value="0.25" />
+        <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/layout/list_trayek.xml" value="0.1641025641025641" />
         <entry key="..\:/_PROJECT/ProfilBPTDGorontalo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1641025641025641" />
       </map>
     </option>

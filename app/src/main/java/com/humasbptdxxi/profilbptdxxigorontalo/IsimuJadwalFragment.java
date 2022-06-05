@@ -15,20 +15,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class DungingiJadwalFragment extends Fragment {
+public class IsimuJadwalFragment extends Fragment {
     Context context;
     RecyclerView recyclerView;
     RecyclerView.Adapter recyclerViewAdapter;
     RecyclerView.LayoutManager recyclerViewLayoutManager;
     String[] rute = {"Rute Gorontalo-Manado","Rute Gorontalo-Bitung","Rute Gorontalo-Kotamobagu","Rute Gorontalo-Palu",
-    "Rute Gorontalo-Makassar","Rute Gorontalo-Buol","Rute Gorontalo-Pinolosian"};
+            "Rute Gorontalo-Makassar","Rute Gorontalo-Buol","Rute Gorontalo-Pinolosian"};
     String[] waktu = {"Pukul 06:00 WITA","Pukul 05:00 WITA","Pukul 06:00 WITA","Pukul 09:00 WITA","Pukul 05:30 WITA","Pukul 07:30 WITA","Pukul 08:00 WITA"};
     String[] tarif = {"Rp. 100.000","Rp. 120.000","Rp. 100.000","Rp. 150.000","Rp. 400.000","Rp. 80.000","Rp. 80.000"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_dungingi_jadwal, container, false);
+        View view = inflater.inflate(R.layout.fragment_isimu_jadwal, container, false);
         context = view.getContext();
         recyclerView = view.findViewById(R.id.LvTrayek);
         recyclerViewLayoutManager = new LinearLayoutManager(context);

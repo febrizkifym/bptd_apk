@@ -70,7 +70,7 @@
                 android:background="@drawable/table_border"
                 android:fontFamily="@font/inter_regular"
                 android:padding="10dp"
-                android:text="Rp. 151.000"
+                android:text="Rp. 156.000"
                 android:textColor="@color/black"
                 android:textSize="17sp" />
 
@@ -80,7 +80,7 @@
                 android:background="@drawable/table_border"
                 android:fontFamily="@font/inter_regular"
                 android:padding="10dp"
-                android:text="Rp. 93.000"
+                android:text="Rp. 18.000"
                 android:textColor="@color/black"
                 android:textSize="17sp" />
 
