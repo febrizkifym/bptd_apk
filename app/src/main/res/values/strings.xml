@@ -38,10 +38,9 @@
     <string name="pelabuhan_penyeberangan_marisa">Pelabuhan Penyeberangan Marisa</string>
     <string name="marisa">Marisa</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="loading">Loading...</string>
-    <string name="terminal_penumpang">Terminal Penumpang</string>
     <string name="dungingi">Dungingi</string>
     <string name="terminal_tipe_a">Terminal Tipe A</string>
     <string name="isimu">Isimu</string>
+    <string name="copyright_text">Copyright 2022. BPTD XXI Gorontalo</string>
 </resources>

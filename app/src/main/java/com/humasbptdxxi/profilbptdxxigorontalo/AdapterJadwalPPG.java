@@ -14,7 +14,7 @@ import java.util.List;
 public class AdapterJadwalPPG extends RecyclerView.Adapter<AdapterJadwalPPG.ViewHolder> {
     public List<String> namaKapal;
     public List<String> keterangan;
-    private Context context;
+    private final Context context;
 
     AdapterJadwalPPG(Context context1, List<String> vNamaKapal, List<String> vKeterangan) {
         namaKapal = vNamaKapal;
@@ -40,7 +40,7 @@ public class AdapterJadwalPPG extends RecyclerView.Adapter<AdapterJadwalPPG.View
         return namaKapal.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvNamaKapal, tvKeterangan;
         ViewHolder(View v){
             super(v);
