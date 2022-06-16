@@ -2,7 +2,6 @@ package com.humasbptdxxi.profilbptdxxigorontalo;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -31,7 +30,7 @@ public class TarifPPGActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
 
-        PPGAdapter ppgAdapter = new PPGAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        PPGAdapter ppgAdapter = new PPGAdapter(getSupportFragmentManager());
         ppgAdapter.addFragment(new FragmentMoinit(), "KMP. Moinit");
         ppgAdapter.addFragment(new FragmentTuna(), "KMP. Tuna Tomini");
         viewPager.setAdapter(ppgAdapter);

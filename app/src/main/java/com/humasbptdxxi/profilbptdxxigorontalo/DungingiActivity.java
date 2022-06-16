@@ -1,16 +1,13 @@
 package com.humasbptdxxi.profilbptdxxigorontalo;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.Locale;
 
@@ -19,8 +16,8 @@ public class DungingiActivity extends AppCompatActivity {
     Toolbar toolbar;
 
     BottomNavigationView bottomNavigationView;
-    DungingiJadwalFragment dungingiJadwalFragment = new DungingiJadwalFragment();
-    DungingiProfilFragment dungingiProfilFragment = new DungingiProfilFragment();
+    final DungingiJadwalFragment dungingiJadwalFragment = new DungingiJadwalFragment();
+    final DungingiProfilFragment dungingiProfilFragment = new DungingiProfilFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +42,7 @@ public class DungingiActivity extends AppCompatActivity {
                     return true;
                 case R.id.lokasi_nav:
                     bottomNavigationView.setSelectedItemId(R.id.profil_nav);
-                    String uri = String.format(Locale.ENGLISH,"google.navigation:q=Terminal+Dungingi",0.5705868,123.0704386);
+                    String uri = "google.navigation:q=Terminal+Dungingi";
 //                        String uri = String.format(Locale.ENGLISH,"google.navigation:q=%f,%f",0.5705868,123.0704386);
 //                        String uri = String.format(Locale.ENGLISH,"geo:%f,%f?q=Terminal+Dungingi",0.5705868,123.0704386);
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));

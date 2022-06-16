@@ -43,7 +43,7 @@ public class PPGActivity extends AppCompatActivity implements View.OnClickListen
             kapalPPGIntent = new Intent(PPGActivity.this, TarifPPGActivity.class);
             startActivity(kapalPPGIntent);
         }else if(id == R.id.menu_lokasi){
-            String uri = String.format(Locale.ENGLISH,"google.navigation:q=Pelabuhan+Ferry+Gorontalo",0.5030011,123.062513);
+            String uri = "google.navigation:q=Pelabuhan+Ferry+Gorontalo";
 //            String uri = String.format(Locale.ENGLISH,"geo:%f,%f?q=Pelabuhan+Ferry+Gorontalo",0.5030011,123.062513);
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
             startActivity(intent);

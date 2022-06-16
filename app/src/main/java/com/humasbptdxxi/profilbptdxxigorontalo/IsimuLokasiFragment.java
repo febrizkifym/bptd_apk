@@ -1,7 +1,6 @@
 package com.humasbptdxxi.profilbptdxxigorontalo;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
@@ -14,7 +13,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 public class IsimuLokasiFragment extends Fragment {
 
@@ -31,7 +29,7 @@ public class IsimuLokasiFragment extends Fragment {
         // Async map
         supportMapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
-            public void onMapReady(GoogleMap googleMap) {
+            public void onMapReady(@NonNull GoogleMap googleMap) {
                 LatLng titik = new LatLng(0.5705868,123.0704386);
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(titik));
             }

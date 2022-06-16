@@ -11,19 +11,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class DungingiJadwalFragment extends Fragment {
     Context context;
     RecyclerView recyclerView;
     RecyclerView.Adapter recyclerViewAdapter;
     RecyclerView.LayoutManager recyclerViewLayoutManager;
-    String[] rute = {"Rute Gorontalo-Manado","Rute Gorontalo-Bitung","Rute Gorontalo-Kotamobagu","Rute Gorontalo-Palu",
+    final String[] rute = {"Rute Gorontalo-Manado","Rute Gorontalo-Bitung","Rute Gorontalo-Kotamobagu","Rute Gorontalo-Palu",
     "Rute Gorontalo-Makassar","Rute Gorontalo-Buol","Rute Gorontalo-Pinolosian"};
-    String[] waktu = {"Pukul 06:00 WITA","Pukul 05:00 WITA","Pukul 06:00 WITA","Pukul 09:00 WITA","Pukul 05:30 WITA","Pukul 07:30 WITA","Pukul 08:00 WITA"};
-    String[] tarif = {"Rp. 100.000","Rp. 120.000","Rp. 100.000","Rp. 150.000","Rp. 400.000","Rp. 80.000","Rp. 80.000"};
+    final String[] waktu = {"Pukul 06:00 WITA","Pukul 05:00 WITA","Pukul 06:00 WITA","Pukul 09:00 WITA","Pukul 05:30 WITA","Pukul 07:30 WITA","Pukul 08:00 WITA"};
+    final String[] tarif = {"Rp. 100.000","Rp. 120.000","Rp. 100.000","Rp. 150.000","Rp. 400.000","Rp. 80.000","Rp. 80.000"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

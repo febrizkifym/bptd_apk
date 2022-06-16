@@ -14,7 +14,7 @@ public class PPGAdapter extends FragmentPagerAdapter {
     private final ArrayList<String> fragmentTitle = new ArrayList<>();
 
 
-    public PPGAdapter(@NonNull FragmentManager fm, int behaviorResumeOnlyCurrentFragment) {
+    public PPGAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }
 

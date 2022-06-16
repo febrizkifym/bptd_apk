@@ -12,10 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class AdapterTrayek extends RecyclerView.Adapter<AdapterTrayek.ViewHolder> {
-    public List<String> rute;
-    public List<String> waktu;
-    public List<String> tarif;
-    private Context context;
+    public final List<String> rute;
+    public final List<String> waktu;
+    public final List<String> tarif;
+    private final Context context;
 
     AdapterTrayek(Context context1, List<String> vRute, List<String> vWaktu, List<String> vTarif) {
         rute = vRute;
@@ -43,8 +43,10 @@ public class AdapterTrayek extends RecyclerView.Adapter<AdapterTrayek.ViewHolder
         return rute.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tvRute, tvWaktu, tvTarif;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        final TextView tvRute;
+        final TextView tvWaktu;
+        final TextView tvTarif;
         ViewHolder(View v){
             super(v);
             tvRute = v.findViewById(R.id.TvRute);

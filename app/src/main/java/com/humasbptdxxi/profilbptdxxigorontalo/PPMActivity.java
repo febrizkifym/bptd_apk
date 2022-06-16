@@ -41,7 +41,7 @@ public class PPMActivity extends AppCompatActivity implements View.OnClickListen
             kapalPPMIntent = new Intent(PPMActivity.this, TarifPPMActivity.class);
             startActivity(kapalPPMIntent);
         }else if(id == R.id.menu_lokasi){
-            String uri = String.format(Locale.ENGLISH,"google.navigation:q=Pelabuhan+Penyeberangan+Marisa",0.4857794,122.1069247);
+            String uri = "google.navigation:q=Pelabuhan+Penyeberangan+Marisa";
 //            String uri = String.format(Locale.ENGLISH,"geo:%f,%f?q=Pelabuhan+Penyeberangan+Marisa",0.4857794,122.1069247);
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
             startActivity(intent);

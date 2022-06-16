@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class AdapterJadwalPPG extends RecyclerView.Adapter<AdapterJadwalPPG.ViewHolder> {
-    public List<String> namaKapal;
-    public List<String> keterangan;
+    public final List<String> namaKapal;
+    public final List<String> keterangan;
     private final Context context;
 
     AdapterJadwalPPG(Context context1, List<String> vNamaKapal, List<String> vKeterangan) {
@@ -41,7 +41,8 @@ public class AdapterJadwalPPG extends RecyclerView.Adapter<AdapterJadwalPPG.View
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tvNamaKapal, tvKeterangan;
+        final TextView tvNamaKapal;
+        final TextView tvKeterangan;
         ViewHolder(View v){
             super(v);
             tvNamaKapal = v.findViewById(R.id.TvNamaKapal);

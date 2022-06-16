@@ -1,26 +1,21 @@
 package com.humasbptdxxi.profilbptdxxigorontalo;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.Locale;
 
 public class IsimuActivity extends AppCompatActivity {
 
     Toolbar toolbar;
 
     BottomNavigationView bottomNavigationView;
-    IsimuJadwalFragment isimuJadwalFragment = new IsimuJadwalFragment();
-    IsimuProfilFragment isimuProfilFragment = new IsimuProfilFragment();
+    final IsimuJadwalFragment isimuJadwalFragment = new IsimuJadwalFragment();
+    final IsimuProfilFragment isimuProfilFragment = new IsimuProfilFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
